@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	for(int i =1;i<=5;i++)
+	int i,j,num;
+	printf("enter a number:"); 
+	scanf("%d",&num);
+	for(i=1;i<=num;i++)
 	{
-		for(int j=1;j<=i;j++)
-		printf("$");
+		for(j=1;j<=num+1-i;j++)
+		printf("%d",j);
 		printf("\n");
 	}
 	return 0;

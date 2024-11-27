@@ -2,12 +2,20 @@
 int main()
 {
 	int i,j,num;
+
 	printf("enter a number:"); 
 	scanf("%d",&num);
-	for(i=1;i<=num;i++)
+	for( i=1;i<=num;i++)
 	{
-		for(j=1;j<=i;j++)
-		printf("%d",j);
+		for( j=1;j<=i;j++)
+		{
+			if(j%2==0)
+			printf("0");
+			else
+			printf("1");
+			
+		}
+		
 		printf("\n");
 	}
 	return 0;
